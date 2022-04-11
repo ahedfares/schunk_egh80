@@ -1,0 +1,28 @@
+##############Request##############
+#possible commands
+uint8 CONNECT = 0
+uint8 SET_POSITION = 1
+uint8 ACKNOWLEDGE = 2
+uint8 GET_POSITION = 3
+uint8 GET_STATUS = 4
+uint8 STOP_GRIPPER = 5
+uint8 REFERENCE = 6
+uint8 DISCONNECT = 7
+
+#command type defines which fields in the request to be filled
+uint8 command
+
+#SET_POSITION
+float32 position        #percentage (0-100%)
+
+---
+##############Response##############
+bool status
+int32 current_position #percentage (0-100%) //get position
+uint8 error_code    
+
+#available error_codes (used by GET_STATUS)
+int8 CODE_ERROR = 0 
+int8 CODE_OOS =  1
+int8 CODE_MAINTENANCE = 2
+int8 CODE_READY = 3
