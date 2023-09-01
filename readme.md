@@ -7,8 +7,7 @@
 ## Dependencies
 1. std_msgs
 2. sensor_msgs 
-3. schunk_msgs
-4. modbuspp *[header file provided with the package: Modbus TCP c++ library]*
+3. modbuspp *[header file provided with the package: Modbus TCP c++ library]*
 
 ## Services
 1. schunk/control/schunk_egh80 (*schunk_control_egh80::srv::ControlEGH80*)

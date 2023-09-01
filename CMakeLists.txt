@@ -15,7 +15,6 @@ set(ament_pkg_deps
   sensor_msgs
   std_msgs
   rclcpp
-  schunk_msgs
 )
 foreach(ament_pkg IN LISTS ament_pkg_deps)
     find_package(${ament_pkg} REQUIRED)
